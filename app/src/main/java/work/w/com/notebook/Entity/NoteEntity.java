@@ -97,6 +97,10 @@ public class NoteEntity implements Serializable{
         return n;
     }
 
+    /**
+     * 将数据库中的Long类型的日期数据转化为Calender
+     * @param itemCreateYMD 传入的long值日期
+     */
     public void setCalendar(Long itemCreateYMD) {
 
         try {

@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements ListView,View.OnC
 
     }
 
+    /**
+     * 初始化页面方法
+     */
     private void init() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

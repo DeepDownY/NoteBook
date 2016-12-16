@@ -22,7 +22,7 @@ public class ListModel implements IListModel {
     public List<NoteEntity> getData(Context context) {
         NoteDao dao = new NoteDao(context);
         List<NoteEntity> ls = dao.getAllNote();
-        Log.i("ListNumber", "getData: "+String.valueOf(ls.size()));
+//        Log.i("ListNumber", "getData: "+String.valueOf(ls.size()));
         return ls;
     }
 }

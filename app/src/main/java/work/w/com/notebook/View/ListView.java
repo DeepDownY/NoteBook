@@ -11,7 +11,16 @@ import work.w.com.notebook.Entity.NoteEntity;
  */
 
 public interface ListView {
+    /**
+     * 设置Note列表的内容
+     * @param ls 含有所有未被删除的Note的list集合
+     */
     void setList(List<NoteEntity> ls);
     Context getContext();
+
+    /**
+     * 重新进入ListActivity用于刷新列表内容的方法
+     * @param ls 含有所有未被删除的Note的list集合
+     */
     void refresh(List<NoteEntity> ls);
 }
