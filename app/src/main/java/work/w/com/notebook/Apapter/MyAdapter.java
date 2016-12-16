@@ -51,7 +51,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyHolder> implemen
     @Override
     public void onBindViewHolder(MyHolder holder, int position) {
         holder.tt_title.setText(ls.get(position).getTitle());
-        holder.tt_datetime.setText(ls.get(position).getStringDate());
+        holder.tt_datetime.setText(ls.get(position).
+                getStringDate());
         holder.tt_word.setText(ls.get(position).getFirstWord());
         holder.ll.setTag(position);
         holder.ll.setOnClickListener(this);
