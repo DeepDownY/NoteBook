@@ -49,6 +49,7 @@ public class NoteEntity implements Serializable{
         if(noteContent.length()<=200){
             this.firstWord = noteContent;
         }else {
+
             this.firstWord = noteContent.substring(200) + "...";
         }
 
